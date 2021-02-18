@@ -1,1 +1,129 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2 {
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  outline: #c0df34;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  background: #c0df34;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 250ms ease-in-out, -webkit-transform 150ms ease;
+  transition: all 250ms ease-in-out, -webkit-transform 150ms ease;
+  transition: all 250ms ease-in-out, transform 150ms ease;
+  transition: all 250ms ease-in-out, transform 150ms ease, -webkit-transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #e5eff5;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.prices .intro,
+.prices .subscription,
+.prices .features {
+  padding: 1.5em;
+}
+
+.prices .intro {
+  padding: 2em 1.5em;
+}
+
+.prices .intro h1 {
+  color: #2ab2af;
+  font-size: 18px;
+}
+
+.prices .intro h2 {
+  color: #c0df34;
+  font-size: 17px;
+}
+
+.prices .intro p {
+  color: #98a6bd;
+  margin: 2em 0 0;
+  font-size: 14px;
+}
+
+.prices .subscription {
+  background: #2ab2af;
+}
+
+.prices .subscription h1 {
+  font-size: 17px;
+}
+
+.prices .subscription span {
+  font-size: 1.5rem;
+}
+
+.prices .subscription span small {
+  font-size: 1rem;
+}
+
+.prices .subscription a.btn {
+  padding: 0.8em 1em;
+  margin: 1.5em 0 0;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.prices .subscription a.btn:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.prices .features {
+  background: #41bebc;
+}
+
+.prices .features li {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
