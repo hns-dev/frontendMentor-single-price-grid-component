@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
 
 // Colors
 
@@ -31,6 +31,9 @@ img {
 h1,
 h2 {
   line-height: 1;
+}
+
+h1 {
   margin-bottom: 1em;
 }
 
@@ -66,38 +69,48 @@ body {
   min-height: 100vh;
 }
 
-// .container {
-//   width: 90%;
-//   // max-width: 950px;
-//   margin: 0 auto;
-//   //   padding: 2em 1em;
-// }
-
 // Prices section
 .prices {
+  min-height: 100vh;
+  background: $light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5em 0;
+
+  .prices-container {
+    border-radius: 5px;
+    width: 83%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 1px 10px 30px 10px rgba(152, 166, 189, 0.3);
+  }
+
   .intro,
   .subscription,
-  .features {
-    padding: 1.5em;
+  .why-us {
+    padding: 2em 1.5em;
   }
 
   .intro {
-    padding: 2em 1.5em;
+    background: white;
 
     h1 {
       color: $cyan;
-      font-size: 18px;
+      font-size: 1.3rem;
+      margin-bottom: 1.2em;
     }
 
     h2 {
       color: $bright-yellow;
-      font-size: 17px;
+      font-size: 1rem;
     }
 
     p {
       color: $grayish-blue;
-      margin: 2em 0 0;
-      font-size: 14px;
+      margin: 1.3em 0 0;
+      font-size: 0.84rem;
     }
   } // End of intro
 
@@ -105,14 +118,16 @@ body {
     background: $cyan;
 
     h1 {
-      font-size: 17px;
+      font-size: 1.1rem;
     }
 
     span {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      font-weight: 700;
 
       small {
         font-size: 1rem;
+        font-weight: 300;
       }
     }
 
@@ -120,7 +135,8 @@ body {
       padding: 0.8em 1em;
       margin: 1.5em 0 0;
       width: 100%;
-      box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.2);
+      font-weight: 700;
     }
 
     a.btn:hover {
@@ -128,11 +144,15 @@ body {
     }
   } // End of subscription
 
-  .features {
+  .why-us {
     background: $light-cyan;
 
+    h1 {
+      font-size: 1.2rem;
+    }
+
     li {
-      font-size: 15px;
+      font-size: 0.85rem;
       font-weight: 300;
     }
   }
@@ -141,7 +161,73 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: #333;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  line-height: 1.1;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  //   color: hsl(228, 45%, 44%);
+  color: $cyan;
+}
+
+// Media queries
+@media (min-width: 700px) {
+  .prices {
+    .prices-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .intro,
+    .subscription,
+    .why-us {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+    }
+
+    .intro {
+      grid-column: span 2;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        width: 80%;
+      }
+    } //End of intro
+
+    .subscription {
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      span {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    } //End of subscription
+
+    .why-us {
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      li {
+        font-size: 0.9rem;
+      }
+    }
+  }
 }
