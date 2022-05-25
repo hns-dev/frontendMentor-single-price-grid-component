@@ -165,20 +165,6 @@ body {
   }
 } // End of Prices section
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  color: #333;
-  width: 90%;
-  margin: 0 auto;
-  padding: 0.5em 0;
-  line-height: 1.1;
-}
-.attribution a {
-  //   color: hsl(228, 45%, 44%);
-  color: $cyan;
-}
-
 // Media queries
 @media (min-width: 700px) {
   .prices {
